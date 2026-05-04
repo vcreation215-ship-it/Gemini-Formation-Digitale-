@@ -1,0 +1,176 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élite Digitale | Voie D'espoir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#fae6ea',
+                        'brand-title': '#6a3f46',
+                        'brand-text': '#4a4a4a',
+                        'btn-top': '#f9d863',
+                        'btn-bottom': '#dca71d'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .btn-gold {
+            background: linear-gradient(to bottom, #f9d863, #dca71d);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        .btn-gold:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen font-sans antialiased pb-24">
+
+    <!-- Container Principal -->
+    <div class="max-w-md mx-auto px-4 pt-8 pb-12">
+
+        <!-- En-tête / Branding -->
+        <header class="text-center mb-8 fade-in">
+            <p class="text-xs font-bold tracking-widest text-brand-title uppercase mb-1">SODAPRES GROUP</p>
+            <h1 class="text-2xl font-black text-brand-title">VOIE D'ESPOIR</h1>
+            <div class="w-16 h-1 bg-brand-title mx-auto mt-3 rounded-full opacity-50"></div>
+        </header>
+
+        <!-- Titre accrocheur -->
+        <div class="text-center mb-8 fade-in delay-100">
+            <div class="inline-block bg-white text-brand-title font-bold text-sm px-4 py-1 rounded-full mb-4 shadow-sm border border-brand-title/10">
+                🚀 Formation : ÉLITE DIGITALE
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-title leading-tight mb-4">
+                Créer des vidéos animées avec l'IA
+            </h2>
+            <p class="text-lg font-medium text-brand-text bg-white/50 p-4 rounded-xl">
+                La méthode simple pour gagner <strong class="text-brand-title">au moins 10 nouveaux abonnés</strong> chaque jour.
+            </p>
+        </div>
+
+        <!-- Image d'illustration -->
+        <div class="bg-white p-2 rounded-2xl shadow-sm mb-8 fade-in delay-200 relative overflow-hidden group">
+            <div class="aspect-video bg-gray-900 rounded-xl flex items-center justify-center relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Illustration intelligence artificielle" class="absolute inset-0 w-full h-full object-cover opacity-80 rounded-xl transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-title/80 to-transparent rounded-xl"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-center">
+                    <p class="text-white font-bold text-lg drop-shadow-md">Démarquez-vous avec l'IA</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ce que vous allez apprendre -->
+        <div class="space-y-4 mb-8">
+            <h3 class="font-bold text-brand-title text-center mb-4 text-lg fade-in delay-300">Au programme de cette formation :</h3>
+
+            <!-- Module 1 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-white/50 fade-in delay-300">
+                <h4 class="text-xl font-bold text-brand-title mb-2 flex items-center">
+                    <i class="fas fa-robot mr-3 opacity-80 text-blue-500"></i> Maîtrise des IA
+                </h4>
+                <p class="text-brand-text text-sm mb-0 leading-relaxed">
+                    Découvrez les meilleurs outils gratuits pour générer des images et des voix ultra-réalistes sans compétences techniques.
+                </p>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-white/50 fade-in delay-300">
+                <h4 class="text-xl font-bold text-brand-title mb-2 flex items-center">
+                    <i class="fas fa-magic mr-3 opacity-80 text-purple-500"></i> Animation & Montage
+                </h4>
+                <p class="text-brand-text text-sm mb-0 leading-relaxed">
+                    Apprenez à donner vie à vos personnages et à créer des vidéos captivantes qui retiennent l'attention de l'audience.
+                </p>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-white/50 fade-in delay-300">
+                <h4 class="text-xl font-bold text-brand-title mb-2 flex items-center">
+                    <i class="fas fa-chart-line mr-3 opacity-80 text-green-500"></i> Croissance Virale
+                </h4>
+                <p class="text-brand-text text-sm mb-0 leading-relaxed">
+                    La stratégie exacte pour publier, utiliser les bons hashtags et attirer vos 10 premiers abonnés quotidiens en automatique.
+                </p>
+            </div>
+        </div>
+
+        <!-- Carte d'Achat Principale -->
+        <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-yellow-400/50 fade-in delay-300 relative mt-12">
+            <!-- Badge Promo -->
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brand-title text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md whitespace-nowrap animate-bounce">
+                🔥 OFFRE SPÉCIALE
+            </div>
+            
+            <h3 class="text-2xl font-extrabold text-brand-title mb-3 mt-2 text-center">
+                📱 Élite Digitale
+            </h3>
+            <p class="text-center text-sm text-gray-600 mb-6">
+                Accédez immédiatement à la méthode complète et commencez à créer vos vidéos IA dès aujourd'hui.
+            </p>
+            
+            <!-- BOUTON D'ACHAT PRINCIPAL (Redirige vers FedaPay personnalisé) -->
+            <button onclick="procederAuPaiement()" class="w-full btn-gold text-black font-extrabold text-lg py-3 rounded-xl flex flex-col items-center justify-center transform transition hover:scale-105">
+                <span class="text-xs line-through opacity-70 mb-1">Ancien prix: 5 900 FCFA</span>
+                <span>ACCÉDER (2 000 FCFA)</span>
+            </button>
+
+            <div class="mt-4 text-center text-xs text-gray-500 flex justify-center items-center gap-2 bg-gray-50 p-2 rounded-lg">
+                <i class="fas fa-lock text-green-600"></i> Paiement 100% sécurisé via Wave / OM / MoMo
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-brand-title/60 py-8 border-t border-brand-title/10 mt-4">
+        <p>© 2026 SODAPRES GROUP - Division Digitale</p>
+        <p class="mt-1 font-semibold">Voie D'espoir</p>
+    </footer>
+
+    <!-- Bouton d'achat fixe en bas (Mobile) -->
+    <div class="fixed bottom-0 left-0 w-full bg-brand-bg/95 backdrop-blur-md border-t border-white/50 p-4 sm:hidden z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <button onclick="procederAuPaiement()" class="w-full btn-gold text-black font-extrabold py-3 rounded-xl shadow-lg text-sm flex flex-col items-center justify-center">
+            <span class="text-[10px] line-through opacity-70 mb-0.5">5 900 FCFA</span>
+            <div class="flex items-center"><i class="fas fa-rocket mr-2 animate-pulse"></i> REJOINDRE - 2 000 FCFA</div>
+        </button>
+    </div>
+
+    <script>
+        // === VOTRE LIEN DE PAIEMENT OFFICIEL FEDAPAY MIS A JOUR ===
+        const LIEN_DE_PAIEMENT = "https://me.fedapay.com/Elitedigitale"; 
+
+        function procederAuPaiement() {
+            window.open(LIEN_DE_PAIEMENT, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+
+```
