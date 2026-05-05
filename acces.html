@@ -1,1 +1,132 @@
-https://drive.google.com/drive/folders/1_TxXzaFdoPjogZd3vu-szyAhzaeUB2zx
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Élève | Élite Digitale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#fae6ea',
+                        'brand-title': '#6a3f46',
+                        'brand-text': '#4a4a4a',
+                        'btn-top': '#f9d863',
+                        'btn-bottom': '#dca71d'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .btn-gold {
+            background: linear-gradient(to bottom, #f9d863, #dca71d);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        .btn-gold:hover { transform: translateY(-2px); }
+        .btn-gold:active { transform: scale(0.98); }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; transform: translateY(10px); }
+        @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen font-sans antialiased pb-12">
+
+    <!-- Bandeau VIP -->
+    <div class="bg-brand-title text-white text-center py-2 text-xs font-bold tracking-widest uppercase shadow-md flex items-center justify-center gap-2">
+        <i class="fas fa-lock text-yellow-400"></i> Zone Sécurisée - Accès Réservé
+    </div>
+
+    <!-- Container Principal -->
+    <div class="max-w-md mx-auto px-4 pt-8">
+
+        <!-- En-tête -->
+        <header class="text-center mb-10 fade-in">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md border-2 border-yellow-400">
+                <i class="fas fa-graduation-cap text-3xl text-brand-title"></i>
+            </div>
+            <h1 class="text-3xl font-black text-brand-title leading-tight mb-2">Bienvenue dans l'Élite !</h1>
+            <p class="text-sm font-medium text-brand-text bg-white/60 p-3 rounded-xl border border-white">
+                Félicitations pour votre investissement. Voici vos accès directs aux modules de formation.
+            </p>
+        </header>
+
+        <!-- Les Modules de Formation -->
+        <div class="space-y-6 fade-in delay-100">
+
+            <!-- MODULE 1 : Vidéo Animée -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-blue-100 text-blue-800 text-[10px] font-bold px-3 py-1 rounded-bl-lg">MODULE 1</div>
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-blue-500 flex items-center justify-center text-xl mr-4 shadow-inner">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-brand-title text-lg leading-tight">Création de vidéo animée (IA)</h2>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fab fa-google-drive mr-1"></i> Dossier Google Drive</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mb-5">
+                    Découvrez les bases et la méthode pour générer des vidéos d'animation captivantes grâce à l'Intelligence Artificielle.
+                </p>
+                <a href="https://drive.google.com/drive/folders/1IgwHU6pjbweJ1H50-HVIGuz7w_RgJz9q" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-center py-3.5 rounded-xl shadow-md transition transform hover:scale-[1.02]">
+                    <i class="fas fa-folder-open mr-2"></i> Ouvrir le Module 1
+                </a>
+            </div>
+
+            <!-- MODULE 2 : Vidéo AVATAR -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-purple-100 text-purple-800 text-[10px] font-bold px-3 py-1 rounded-bl-lg">MODULE 2</div>
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-lg bg-purple-50 text-purple-500 flex items-center justify-center text-xl mr-4 shadow-inner">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-brand-title text-lg leading-tight">Création de vidéo IA AVATAR</h2>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fab fa-google-drive mr-1"></i> Dossier Google Drive</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mb-5">
+                    Passez au niveau supérieur en créant des avatars ultra-réalistes qui parlent avec votre propre voix (ou une voix générée).
+                </p>
+                <a href="https://drive.google.com/drive/folders/1_TxXzaFdoPjogZd3vu-szyAhzaeUB2zx" target="_blank" class="block w-full bg-purple-600 hover:bg-purple-700 text-white font-bold text-center py-3.5 rounded-xl shadow-md transition transform hover:scale-[1.02]">
+                    <i class="fas fa-folder-open mr-2"></i> Ouvrir le Module 2
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Support / Aide -->
+        <div class="mt-10 bg-white/50 border border-brand-title/20 rounded-2xl p-5 text-center fade-in delay-200">
+            <h3 class="font-bold text-brand-title text-sm mb-2"><i class="fas fa-question-circle text-yellow-500 mr-1"></i> Besoin d'aide ?</h3>
+            <p class="text-xs text-gray-600 mb-3">
+                Si vous avez des questions sur la formation, n'hésitez pas à les poser directement dans notre groupe WhatsApp privé !
+            </p>
+            <div class="inline-flex items-center gap-2 text-xs font-bold text-green-600 bg-green-50 px-3 py-1.5 rounded-lg">
+                <i class="fab fa-whatsapp text-lg"></i> Support disponible dans le groupe
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-brand-title/60 mt-12 border-t border-brand-title/10 pt-6">
+        <p>© 2026 SODAPRES GROUP - Voie D'espoir</p>
+        <p class="mt-1">Veuillez ne pas partager cette page secrète.</p>
+    </footer>
+
+</body>
+</html>
+
+```
+
