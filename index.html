@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -38,37 +38,64 @@
 
     <div class="max-w-md mx-auto px-4 pt-8 pb-12">
         <!-- En-tête -->
-        <header class="text-center mb-8 fade-in">
+        <header class="text-center mb-6 fade-in">
             <p class="text-xs font-bold tracking-widest text-brand-title uppercase mb-1">SODAPRES GROUP</p>
             <h1 class="text-2xl font-black text-brand-title">VOIE D'ESPOIR</h1>
             <div class="w-16 h-1 bg-brand-title mx-auto mt-3 rounded-full opacity-50"></div>
             <p class="mt-4 text-brand-title/80 font-medium text-sm">Catalogue des Formations</p>
         </header>
 
+        <!-- BANDEAU D'URGENCE COMPTE À REBOURS -->
+        <div class="bg-red-50 border-2 border-red-200 rounded-2xl p-4 mb-8 text-center shadow-md fade-in relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-300"></div>
+            <p class="text-red-600 font-bold text-[11px] uppercase tracking-wider mb-3 flex justify-center items-center">
+                <i class="fas fa-stopwatch text-base mr-2 animate-pulse"></i> La promo à 2 000 F se termine dimanche !
+            </p>
+            <div class="flex justify-center gap-2">
+                <div class="bg-white text-red-600 rounded-lg shadow-sm border border-red-100 w-12 py-1"><span class="font-bold text-lg block leading-none cd-jours">00</span><span class="text-[8px] font-bold uppercase">Jours</span></div>
+                <div class="text-red-300 font-bold text-lg">:</div>
+                <div class="bg-white text-red-600 rounded-lg shadow-sm border border-red-100 w-12 py-1"><span class="font-bold text-lg block leading-none cd-heures">00</span><span class="text-[8px] font-bold uppercase">Hrs</span></div>
+                <div class="text-red-300 font-bold text-lg">:</div>
+                <div class="bg-white text-red-600 rounded-lg shadow-sm border border-red-100 w-12 py-1"><span class="font-bold text-lg block leading-none cd-mins">00</span><span class="text-[8px] font-bold uppercase">Min</span></div>
+                <div class="text-red-300 font-bold text-lg">:</div>
+                <div class="bg-white text-red-600 rounded-lg shadow-sm border border-red-100 w-12 py-1"><span class="font-bold text-lg block leading-none cd-secs">00</span><span class="text-[8px] font-bold uppercase">Sec</span></div>
+            </div>
+        </div>
+
         <!-- FORMATION 1 : ANIMÉE -->
-        <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-blue-400/50 mb-8 fade-in relative">
-            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">POPULAIRE</div>
+        <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-blue-400/50 mb-6 fade-in relative">
+            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-sm">POPULAIRE</div>
             <h3 class="text-xl font-extrabold text-brand-title mb-2 mt-2 flex items-center">
                 <i class="fas fa-film text-blue-500 mr-2"></i> Vidéo Animée IA
             </h3>
             <p class="text-sm text-gray-600 mb-4">Générez des vidéos d'animation captivantes grâce à l'IA pour booster vos vues et abonnés.</p>
-            <button onclick="procederAuPaiement('animee')" class="w-full btn-gold text-black font-extrabold py-3 rounded-xl shadow text-sm flex flex-col items-center">
-                <span class="text-[10px] line-through opacity-70 mb-0.5">5 900 FCFA</span>
+            <button onclick="procederAuPaiement('animee')" class="w-full btn-gold text-black font-extrabold py-3 rounded-xl shadow text-sm flex flex-col items-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full bg-red-600 text-white text-[8px] font-black tracking-widest uppercase py-0.5 animate-pulse">Fin de promo imminente</div>
+                <span class="text-[10px] line-through opacity-70 mb-0.5 mt-2">5 900 FCFA</span>
                 <span>ACCÉDER (2 000 FCFA)</span>
             </button>
         </div>
 
         <!-- FORMATION 2 : AVATAR -->
-        <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-purple-400/50 mb-8 fade-in relative">
-            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">TENDANCE</div>
+        <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-purple-400/50 mb-10 fade-in relative">
+            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-sm">TENDANCE</div>
             <h3 class="text-xl font-extrabold text-brand-title mb-2 mt-2 flex items-center">
                 <i class="fas fa-user-astronaut text-purple-500 mr-2"></i> Vidéo AVATAR IA
             </h3>
-            <p class="text-sm text-gray-600 mb-4">Créez des présentateurs virtuels ultra-réalistes qui parlent à votre place (comme HeyGen).</p>
-            <button onclick="procederAuPaiement('avatar')" class="w-full btn-gold text-black font-extrabold py-3 rounded-xl shadow text-sm flex flex-col items-center">
-                <span class="text-[10px] line-through opacity-70 mb-0.5">5 900 FCFA</span>
+            <p class="text-sm text-gray-600 mb-4">Créez des présentateurs virtuels IA ultra-réalistes qui parlent à votre place avec un rendu 100% professionnel.</p>
+            <button onclick="procederAuPaiement('avatar')" class="w-full btn-gold text-black font-extrabold py-3 rounded-xl shadow text-sm flex flex-col items-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full bg-red-600 text-white text-[8px] font-black tracking-widest uppercase py-0.5 animate-pulse">Fin de promo imminente</div>
+                <span class="text-[10px] line-through opacity-70 mb-0.5 mt-2">5 900 FCFA</span>
                 <span>ACCÉDER (2 000 FCFA)</span>
             </button>
+        </div>
+
+
+        <!-- SÉPARATEUR -->
+        <div class="flex items-center justify-center mb-8 fade-in">
+            <div class="h-px bg-brand-title/20 flex-1"></div>
+            <h3 class="font-bold text-brand-title px-4 text-sm uppercase tracking-wider">Et aussi...</h3>
+            <div class="h-px bg-brand-title/20 flex-1"></div>
         </div>
 
         <!-- FORMATION 3 : SITE WEB -->
@@ -88,23 +115,46 @@
     </div>
 
     <script>
+        // === COMPTE À REBOURS AUTOMATIQUE ===
+        function demarrerCompteARebours() {
+            function mettreAJourTemps() {
+                const maintenant = new Date();
+                const jourActuel = maintenant.getDay(); // 0 = Dimanche
+                
+                // Calculer le prochain Dimanche à 23:59:59
+                let dateFin = new Date(maintenant);
+                let joursRestants = jourActuel === 0 ? 0 : 7 - jourActuel;
+                dateFin.setDate(maintenant.getDate() + joursRestants);
+                dateFin.setHours(23, 59, 59, 999);
+
+                const difference = dateFin.getTime() - maintenant.getTime();
+
+                let jours = Math.floor(difference / (1000 * 60 * 60 * 24));
+                let heures = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes = Math.floor((difference % (1000 * 60)) / 1000);
+
+                // Mise à jour de tous les éléments avec ces classes
+                document.querySelectorAll(".cd-jours").forEach(el => el.innerText = jours.toString().padStart(2, '0'));
+                document.querySelectorAll(".cd-heures").forEach(el => el.innerText = heures.toString().padStart(2, '0'));
+                document.querySelectorAll(".cd-mins").forEach(el => el.innerText = minutes.toString().padStart(2, '0'));
+                document.querySelectorAll(".cd-secs").forEach(el => el.innerText = secondes.toString().padStart(2, '0'));
+            }
+
+            mettreAJourTemps(); 
+            setInterval(mettreAJourTemps, 1000); 
+        }
+        demarrerCompteARebours();
+
         // === VOS LIENS DE PAIEMENT FEDAPAY ===
-        // 1. Lien pour la vidéo animée (L'ancien Élite Digitale)
-        const LIEN_ANIMEE = "https://me.fedapay.com/Elitedigitale"; 
-        
-        // 2. Lien pour la vidéo Avatar (⚠️ À CRÉER SUR FEDAPAY)
-        const LIEN_AVATAR = ""; 
-        
-        // 3. Lien pour les sites web
-        const LIEN_SITE_WEB = "https://me.fedapay.com/AT8iBZij"; 
+        const LIEN_ANIMEE = "https://me.fedapay.com/Elitedigitale-cinemaIA"; 
+        const LIEN_AVATAR = "https://me.fedapay.com/iJK_c2wF"; 
+        const LIEN_SITE_WEB = "https://me.fedapay.com/site-Pro-Elitedigitale"; 
 
         function procederAuPaiement(formation) {
             if (formation === 'animee') window.open(LIEN_ANIMEE, '_blank');
             else if (formation === 'siteweb') window.open(LIEN_SITE_WEB, '_blank');
-            else if (formation === 'avatar') {
-                if (LIEN_AVATAR === "") alert("Bientôt disponible ! Le lien FedaPay est en cours de création.");
-                else window.open(LIEN_AVATAR, '_blank');
-            }
+            else if (formation === 'avatar') window.open(LIEN_AVATAR, '_blank');
         }
     </script>
 </body>
@@ -112,3 +162,4 @@
 
 
 ```
+
