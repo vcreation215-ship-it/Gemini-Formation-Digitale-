@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès Formation Site Web & Design | Voie D'espoir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; transform: translateY(10px); }
+        @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-[#fae6ea] text-[#4a4a4a] min-h-screen font-sans antialiased pb-12">
+
+    <!-- Bandeau Sécurité -->
+    <div class="bg-[#6a3f46] text-white text-center py-2 text-xs font-bold tracking-widest uppercase shadow-md flex items-center justify-center gap-2">
+        <i class="fas fa-lock text-yellow-400"></i> Zone Sécurisée
+    </div>
+
+    <!-- Container -->
+    <div class="max-w-md mx-auto px-4 pt-10">
+        
+        <header class="text-center mb-8 fade-in">
+            <h1 class="text-3xl font-black text-[#6a3f46] leading-tight mb-2">Formation Site Web & Design</h1>
+            <p class="text-sm font-medium bg-white/60 p-3 rounded-xl border border-white shadow-sm">
+                Félicitations pour votre achat ! Voici votre accès direct à la formation complète.
+            </p>
+        </header>
+
+        <!-- Carte d'accès -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-blue-100 relative overflow-hidden fade-in">
+            <div class="absolute top-0 right-0 bg-blue-100 text-blue-800 text-[10px] font-bold px-3 py-1 rounded-bl-lg">NOUVEAU</div>
+            
+            <div class="flex items-center mb-5">
+                <div class="w-14 h-14 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mr-4 shadow-inner border border-blue-100">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div>
+                    <h2 class="font-bold text-[#6a3f46] text-lg leading-tight">Site Pro, Logos & Flyers</h2>
+                    <p class="text-xs text-gray-500 mt-1"><i class="fab fa-google-drive text-green-500 mr-1"></i> Dossier Google Drive sécurisé</p>
+                </div>
+            </div>
+            
+            <p class="text-sm text-gray-600 mb-6 bg-gray-50 p-3 rounded-lg border border-gray-100">
+                Vous y trouverez tous les modules pour créer des sites internet professionnels ainsi que des visuels percutants (logos et flyers).
+            </p>
+
+            <!-- Le bouton vers votre Drive -->
+            <a href="https://drive.google.com/drive/folders/1__jt7yGBLXHaNaxGxex7Gf13FzYLPdJA" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-black text-center py-4 rounded-xl shadow-lg transition transform hover:scale-[1.02] flex items-center justify-center">
+                <i class="fas fa-folder-open mr-2 text-xl"></i> OUVRIR LA FORMATION
+            </a>
+        </div>
+        
+        <!-- Support -->
+        <div class="mt-8 text-center fade-in" style="animation-delay: 0.2s;">
+            <p class="text-xs text-gray-500 mb-2">Une question ? Un blocage ?</p>
+            <div class="inline-flex items-center gap-2 text-xs font-bold text-green-700 bg-green-100 px-4 py-2 rounded-full border border-green-200">
+                <i class="fab fa-whatsapp text-lg"></i> Posez vos questions dans le groupe
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+```
